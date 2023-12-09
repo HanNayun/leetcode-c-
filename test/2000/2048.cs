@@ -24,5 +24,10 @@ public class Test2048
         expected = 3133;
         actual = solution.NextBeautifulNumber(n);
         Assert.AreEqual(expected, actual);
+
+        n = 748601;
+        expected = 1224444;
+        actual = solution.NextBeautifulNumber(n);
+        Assert.AreEqual(expected, actual);
     }
 }

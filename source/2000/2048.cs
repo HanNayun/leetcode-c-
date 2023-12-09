@@ -2,10 +2,9 @@ namespace source._2000._2048;
 
 public class Solution
 {
-    
     public int NextBeautifulNumber(int n)
     {
-        for (var i = n + 1; i < 10e6; ++i)
+        for (var i = n + 1; i < 1e7; ++i)
             if (IsBeautiful(i))
                 return i;
 
