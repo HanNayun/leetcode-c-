@@ -11,9 +11,8 @@ public class Solution
         while (right < s.Length)
         {
             var c = s[right];
-            if (!set.Contains(c))
+            if (set.Add(c))
             {
-                set.Add(c);
                 ++right;
                 continue;
             }
