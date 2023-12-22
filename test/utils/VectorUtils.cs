@@ -10,4 +10,12 @@ public class VectorUtils
 
         return true;
     }
+
+    public static bool IsVectorElementsSame(IList<int> arr1, IList<int> arr2)
+    {
+        if (arr1.Count != arr2.Count)
+            return false;
+
+        return !arr1.Where((t, i) => t != arr2[i]).Any();
+    }
 }
